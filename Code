@@ -1,0 +1,97 @@
+ Console.Write("Do you want to play a game (yes --> y) (no --> n)");
+                        choise = Console.ReadLine();
+                        Console.WriteLine(choise);
+                        if (choise == "y" )
+                        {
+                            Console.WriteLine("Lets play rock paper scissor! ");
+
+                            Console.Write("OK? (yes --> y) (no --> n)");
+                            string awnser = Console.ReadLine();
+
+                            while(awnser == "y")
+                            {
+                                Console.Write("What do you choose? (Rock --> r) (Paper --> p) (Scissor --> s)");
+                                choise = Console.ReadLine();
+                                Console.WriteLine(choise);
+                                if (choise == "r")
+                                {
+                                    Console.WriteLine("You choose the rock!!");
+                                    Random computerChoise = new Random();
+                                    int computerChoiseRPS = computerChoise.Next(0, 3);
+
+                                    if (computerChoiseRPS == 0)
+                                    {
+                                        Console.WriteLine("The computer chooses rock! It's a draw!");
+                                        Console.Write("Do you want to play another round? (yes --> y) (no --> n)");
+                                        awnser = Console.ReadLine();
+                                    }
+                                    if (computerChoiseRPS == 1)
+                                    {
+                                        Console.WriteLine("The computer chooses paper! You lose!");
+                                        Console.Write("Do you want to play another round? (yes --> y) (no --> n)");
+                                        awnser = Console.ReadLine();
+                                    }
+                                    if (computerChoiseRPS == 2)
+                                    {
+                                        Console.WriteLine("The computer chooses scissor! You win!");
+                                        Console.Write("Do you want to play another round? (yes --> y) (no --> n)");
+                                        awnser = Console.ReadLine();
+                                    }
+                                }
+                                else if (choise == "p")
+                                {
+                                    Console.WriteLine("You choose the paper!!");
+                                    Random computerChoise = new Random();
+                                    int computerChoiseRPS = computerChoise.Next(0, 3);
+
+                                    if (computerChoiseRPS == 0)
+                                    {
+                                        Console.WriteLine("The computer chooses rock! You win!");
+                                        Console.Write("Do you want to play another round? (yes --> y) (no --> n)");
+                                        awnser = Console.ReadLine();
+                                    }
+                                    if (computerChoiseRPS == 1)
+                                    {
+                                        Console.WriteLine("The computer chooses paper! It's a draw!");
+                                        Console.Write("Do you want to play another round? (yes --> y) (no --> n)");
+                                        awnser = Console.ReadLine();
+                                    }
+                                    if (computerChoiseRPS == 2)
+                                    {
+                                        Console.WriteLine("The computer chooses scissor! You lose!");
+                                        Console.Write("Do you want to play another round? (yes --> y) (no --> n)");
+                                        awnser = Console.ReadLine();
+                                    }
+                                }
+                                else if (choise == "s")
+                                {
+                                    Console.WriteLine("You choose the scissor!!");
+                                    Random computerChoise = new Random();
+                                    int computerChoiseRPS = computerChoise.Next(0, 3);
+
+                                    if (computerChoiseRPS == 0)
+                                    {
+                                        Console.WriteLine("The computer chooses rock! You lose!");
+                                        Console.Write("Do you want to play another round? (yes --> y) (no --> n)");
+                                        awnser = Console.ReadLine();
+                                    }
+                                    if (computerChoiseRPS == 1)
+                                    {
+                                        Console.WriteLine("The computer chooses paper! You win!");
+                                        Console.Write("Do you want to play another round? (yes --> y) (no --> n)");
+                                        awnser = Console.ReadLine();
+                                    }
+                                    if (computerChoiseRPS == 2)
+                                    {
+                                        Console.WriteLine("The computer chooses scissor! It's a draw!");
+                                        Console.Write("Do you want to play another round? (yes --> y) (no --> n)");
+                                        awnser = Console.ReadLine();
+                                    }
+                                }
+                            }
+                            if(awnser == "n")
+                            {
+                                Console.WriteLine("Ok.");
+                              //Console.WriteLine("Do you want to do something different?");
+                                
+                            }
